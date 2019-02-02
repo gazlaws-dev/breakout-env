@@ -7,8 +7,8 @@ def simple_agent(env):
   if not env.started:
     return 1
 
-  ball_pos = env.ball.center()
-  paddle_pos = env.paddle.center()
+  ball_pos = env.ball.center
+  paddle_pos = env.paddle.center
 
   if paddle_pos[1] < ball_pos[1]:
     return 2
